@@ -1,0 +1,11 @@
+async function startProgram() {
+	/* 
+	programmer: Nolan Loukes
+	Date: 1.13.2022
+	program: This program will have the sphero bolt moving a a figure 8 using muli line comments
+	*/
+	setSpeed(188)
+	await spin(360, 1)
+	
+}
+
