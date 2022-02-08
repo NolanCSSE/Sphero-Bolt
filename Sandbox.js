@@ -11,4 +11,6 @@ async function startProgram() {
 	await roll ((getHeading() + 90), 72,2);
 	setMainLed ({ r: 0, g: 0, b: 255});
 	await roll((getHeading() + 90), 67, 2);
+	await Sound.Animal.SeaLion.play(true);
+	await roll((getHeading() + 90), 43, 2);
 }
