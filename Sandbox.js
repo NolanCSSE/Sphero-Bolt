@@ -25,4 +25,15 @@ async function startProgram() {
 	//Chalenge 5
 	await roll((getHeading() + 315), 20, 2);
 	setMainLed ({ r: 0, g: 255, b: 0});
+	//Chalenge 6
+	await roll((getHeading() + 	270), 35, 2);
+	await roll((getHeading() + 	310), 32, 2);
+	await Sound.Animal.Sheep.play(true);
+	//Chalenge 7
+	await roll((getHeading() + 	65), 25, 2);
+	setMainLed ({ r: 255, g: 0, b: 255});
+	await roll((getHeading() + 	0), 32, 2);
+	await scrollMatrixText ('END', { r: 255, g: 0, b: 255},90,false);
+	await roll((getHeading() + 	0), 1, 2);
+}
 }
